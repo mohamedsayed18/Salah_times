@@ -19,22 +19,29 @@ class SalahTimes:
 
     def month_table(self):
         """get the days's prayer times in the list Month"""
+        #print("yes")
         for row in self.table.findAll('tr'):
+            #print(row)
             list_of_cells=[]
             for cell in row.findAll('td'):
+                #print(cell)
                 text = cell.text.replace('&nbsp;', '') #in case of HTML format
+                #print(text)
                 list_of_cells.append(text)
+                #print(len(list_of_cells))
             if len(list_of_cells):  #avoid empty lists
                 del list_of_cells[0]
                 self.month.append(list_of_cells)
+        return self.month
 
     def today_prayer(self):
-        self.month_table()
+        """print the today salahs"""
+        self.month_table()  # get the table for the month
         today = str(datetime.datetime.now()).split()    #[date, time]
         date = int(today[0].split('-')[2])   #date
-        for day in self.month:
+        for day in self.month: # search for today in the month
             if date == int(day[0]):
                 del day[0:2]
-                for i in range(6):
+                for i in range(6):  # print salah and it's time
                     print(self.salah[i],day[i])
                 break
