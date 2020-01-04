@@ -1,6 +1,6 @@
 # Salah_times
 Reminder of salah(prayes) time for linux
-
+![](https://github.com/mohamedsayed18/Salah_times/blob/master/today.png)
 Run the script
 ```python3 ~/main.py```<br/>
 or run by an alias<br/>
@@ -16,9 +16,14 @@ create an instance
 ```python
 mycity = SalahTimes()
 ```
-to display the salah times for month or for today
+to display the salah times for month
 ```
-mycity.month_table()    #get the whole month times
+month = mycity.month_table()    #get the whole month times
+for day in month:
+  print (day)
+```
+for today
+```
 mycity.today_prayer()   #print today times
 ```
 you can get the url of your city from [this website](https://en.halalguide.me) and click on the salah time the URL should look like this if we choose cairo for example
