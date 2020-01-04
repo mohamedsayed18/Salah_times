@@ -1,6 +1,6 @@
 # Salah_times
-Reminder of salah(prayes) time for linux
-![](https://github.com/mohamedsayed18/Salah_times/blob/master/today.png)
+Reminder of salah(prayes) time for linux<br/>
+![](https://github.com/mohamedsayed18/Salah_times/blob/master/today.png)<br/>
 Run the script
 ```python3 ~/main.py```<br/>
 or run by an alias<br/>
