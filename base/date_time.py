@@ -34,7 +34,7 @@ class SalahTimes:
                 self.month.append(list_of_cells)
         return self.month
 
-    def today_prayer(self):
+    def today_prayer(self, return_ok=False):
         """print the today salahs"""
         self.month_table()  # get the table for the month
         today = str(datetime.datetime.now()).split()    #[date, time]
@@ -42,6 +42,11 @@ class SalahTimes:
         for day in self.month: # search for today in the month
             if date == int(day[0]):
                 del day[0:2]
+                if return_ok:
+                    return dict(zip(self.salah, day))
                 for i in range(6):  # print salah and it's time
                     print(self.salah[i],day[i])
                 break
+    
+    def today_info(self):
+        return self.today_prayer(return_ok=True)

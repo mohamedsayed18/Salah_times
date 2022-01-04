@@ -35,6 +35,11 @@ and you can pass it to the constructor like this <br/>
 * a demon that run in the back ground give notifications
 * GUI version
 
+## Automicatic Ubuntu Notifier
+![](https://raw.githubusercontent.com/JafarBadour/Salah_times/master/misc/notification.jpg)<br/>
+
+
+
 #### Useful links
 [scraper tutorial](https://hackernoon.com/building-a-web-scraper-from-start-to-finish-bb6b95388184)<br/>
 [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)<br/>
