@@ -36,7 +36,7 @@ and you can pass it to the constructor like this <br/>
 * GUI version
 
 ## Automicatic Ubuntu Notifier
-![](/misc/today.png)<br/>
+![](https://raw.githubusercontent.com/JafarBadour/Salah_times/master/misc/notification.jpg)<br/>
 
 
 
