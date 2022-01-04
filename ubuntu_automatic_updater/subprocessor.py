@@ -20,7 +20,6 @@ def run():
     
     prayer_time_manager = SalahTimes()
     today_info = prayer_time_manager.today_info()
-    print(today_info)
     time_now = datetime.now().time()
     time_now = datetime.combine(date.today(), time_now) - timedelta(seconds=5000)
     for k,v in today_info.items():
